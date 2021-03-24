@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded',(event)=>{
         devoured: document.getElementById('devoured').checked,
         };
        
-
+        // console.log(newBurger);
       
         fetch('/api/burgers',{
             method:'POST',

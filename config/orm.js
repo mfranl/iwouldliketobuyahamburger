@@ -14,8 +14,9 @@ const orm = {
     query += " (";
     query += cols.toString();
     query += ") ";
-    query += "VALUES (??)";
-
+    query += "VALUES (?,?)";
+    
+console.log(query);
     connection.query(query, vals, (err, result) => {
       if (err) throw err;
       cb(result);
@@ -28,7 +29,7 @@ const orm = {
     query += cols;
     query += " WHERE ";
     query += condition;
-
+console.log(query);
     connection.query(query, (err, result) => {
       if (err) throw err;
       cb(result);
