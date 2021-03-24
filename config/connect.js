@@ -13,13 +13,7 @@ if (process.env.JAWSDB_URL) {
   });
 }
 
-// const connection = mysql.createConnection({
-//   host: 'localhost',
-//   port: 3306,
-//   user: 'root',
-//   password: 'ShifuL2020!',
-//   database: 'burgers_db',
-// });
+
 
 connection.connect((err) => {
   if (err) {
